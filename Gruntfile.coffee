@@ -13,8 +13,8 @@ module.exports = (grunt) ->
         github: "koba04/vuejs-book"
     'gh-pages':
       options:
-        base: '.grunt/gitbook'
-        src: ['**']
+        base: '_book'
+      src: ['**']
     clean:
       files: '.grunt'
 
