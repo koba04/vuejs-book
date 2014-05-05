@@ -51,9 +51,9 @@ var demo = new Vue({
 })
 ```
 
-これでdemoというViewModelと#demoのDOM要素が関連付けられ、双方向にデータバインディングされます。
+これで`demo`というViewModelと`#demo`のDOM要素が関連付けられ、双方向にデータバインディングされます。
 
-その結果、demo.messageをJavaScriptから変更してもinputの値を変更してもModel(ViewModelのインスタンス)とView(DOM)の値は同期されます。
+その結果、`demo.message`をJavaScriptから変更してもinputの値を変更してもModel(ViewModelのインスタンス)とView(DOM)の値は同期されます。
 
 
 

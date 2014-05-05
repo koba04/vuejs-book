@@ -2,6 +2,7 @@
 * [Vue.jsとは](src/about-vuejs.md)
 * [インストール](src/install.md)
 * [ViewModel](src/view-model.md)
+  * [データ](src/view-model/data.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)

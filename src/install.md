@@ -10,7 +10,7 @@ Vue.jsではIE8はサポートしてないのでIE8のサポートが必要な�
 
 ## モジュールビルドライブラリを使用する場合
 
-Vue.jsがビルドで使用している[component](http://component.io/)や[browserify](http://browserify.org/)を使ってrequireで読み込む方法もサポートされています。
+Vue.jsがビルドで使用している[component](http://component.io/)や[browserify](http://browserify.org/)を使って`require`で読み込む方法もサポートされています。
 
 ```javascript
 var Vue = require('vue');
