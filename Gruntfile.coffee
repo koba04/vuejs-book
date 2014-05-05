@@ -8,13 +8,9 @@ module.exports = (grunt) ->
     gitbook:
       development:
         input: "./"
-        title: "vue.js book"
-        description: "This book is vue.js guide book."
+        title: "vue.js book",
+        description: "This book is vue.js guide book.",
         github: "koba04/vuejs-book"
-      epub:
-        input: "./"
-        output: "epub"
-        format: "epub"
     'gh-pages':
       options:
         base: '_book'
