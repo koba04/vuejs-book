@@ -19,3 +19,8 @@ vm.name = "jim";
 console.log(vm.$data.name); // jim
 console.log(vm.name);       // jim
 ```
+
+dataの値はJSONとして表現できる形式である必要があります。
+
+dataの値は他のViewModelと共有して使用することも可能ですので、APIのレスポンスをdataとして、複数のViewModelで共有するといった使い方も出来ます。
+
