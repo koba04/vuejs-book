@@ -10,7 +10,7 @@ Directivesを見てみるとAngular.jsから移植したようなものも多い
 
 ### Simple
 
-HTMLとdataとなるJavaScriptのオブジェクトを定義するだけでよく、独自のフレームワークが提供しているクラスを継承したりする必要はありません。
+HTMLとdataとなるJSONをもとにViewModelを作成するだけで動作します。
 
 ### Fast
 
