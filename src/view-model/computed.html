@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="koba04/vuejs-book" data-level="4.3" data-basepath="../.." data-revision="1399911180918">
+    <div class="book" data-github="koba04/vuejs-book" data-level="4.3" data-basepath="../.." data-revision="1399911311259">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -324,7 +324,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_140">
+                    <section class="normal" id="section-gitbook_164">
                     
                         <h1 id="computed">Computed</h1>
 <p>ComputedはfisrtNameとlastNameを組み合わせてfullNameというプロパティを作りたい場合など、シンプルなGetter、Setterとして使うと便利な機能です。</p>
@@ -346,7 +346,7 @@
 
 console.log(vm.totalScore); <span class="hljs-comment">// 60</span>
 </code></pre>
-<p>Getter、Setterを定義したい場合はこのように、$getと$setを定義します。</p>
+<p>Getter、Setterを定義したい場合はこのように、\$getと\$setを定義します。</p>
 <pre><code class="lang-javascript">vm = <span class="hljs-keyword">new</span> Vue({
   el: <span class="hljs-string">"#test"</span>,
   data: {
@@ -394,13 +394,13 @@ console.log(vm.totalScore); <span class="hljs-comment">// 80</span>
   }
 });
 </code></pre>
-<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- toggleさせてerrMsgが出すようにし、errMsgの値を変更しても{{status}}に反映されない
-&lt;div id="test"&gt;
-    &lt;input v-model="okMsg"&gt;
-    &lt;input v-model="errMsg"&gt;
-    &lt;button v-on="click: toggle"&gt;toggle&lt;/button&gt;
-    &lt;p&gt;{{status}}&lt;/p&gt;
-&lt;/div&gt;</span>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- toggleさせてerrMsgが出すようにし、errMsgの値を変更しても{{status}}に反映されない --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"okMsg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"errMsg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">v-on</span>=<span class="hljs-value">"click: toggle"</span>&gt;</span>toggle<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{status}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <p><a href="http://jsfiddle.net/N3JQk/" target="_blank">http://jsfiddle.net/N3JQk/</a></p>
 <p>なのでそういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。</p>
