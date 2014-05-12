@@ -3,6 +3,8 @@
 * [インストール](src/install.md)
 * [ViewModel](src/view-model.md)
   * [データ](src/view-model/data.md)
+  * [Methods](src/view-model/methods.md)
+  * [Computed](src/view-model/computed.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)
