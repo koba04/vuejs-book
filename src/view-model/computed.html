@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>データ | vue.js book</title>
+        <title>Computed | vue.js book</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../../src/view-model/methods.html" />
+        <link rel="next" href="../../src/directive.html" />
         
         
-        <link rel="prev" href="../../src/view-model.html" />
+        <link rel="prev" href="../../src/view-model/methods.html" />
         
 
-        <meta property="og:title" content="データ | vue.js book">
+        <meta property="og:title" content="Computed | vue.js book">
         <meta property="og:site_name" content="vue.js book">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="koba04/vuejs-book" data-level="4.1" data-basepath="../.." data-revision="1399911180918">
+    <div class="book" data-github="koba04/vuejs-book" data-level="4.3" data-basepath="../.." data-revision="1399911180918">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -120,7 +120,7 @@
 
         
         <li>
-            <a href="https://github.com/koba04/vuejs-book/edit/master/src/view-model/data.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/koba04/vuejs-book/edit/master/src/view-model/computed.md" target="blank">Edit and Contribute</a>
         </li>
         
 
@@ -283,7 +283,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 53.333333333333336%;min-width: 46.666666666666664%;"></div>
+        <div class="inner" style="width: 66.66666666666667%;min-width: 60%;"></div>
     </div>
     <div class="chapters">
     
@@ -305,9 +305,9 @@
     
         <a href="../../src/view-model/data.html" title="データ" class="chapter done " data-progress="4.1" style="left: 53.333333333333336%;"></a>
     
-        <a href="../../src/view-model/methods.html" title="Methods" class="chapter  " data-progress="4.2" style="left: 60%;"></a>
+        <a href="../../src/view-model/methods.html" title="Methods" class="chapter done " data-progress="4.2" style="left: 60%;"></a>
     
-        <a href="../../src/view-model/computed.html" title="Computed" class="chapter  " data-progress="4.3" style="left: 66.66666666666667%;"></a>
+        <a href="../../src/view-model/computed.html" title="Computed" class="chapter done " data-progress="4.3" style="left: 66.66666666666667%;"></a>
     
         <a href="../../src/directive.html" title="Directive" class="chapter  new-chapter" data-progress="5" style="left: 73.33333333333333%;"></a>
     
@@ -324,27 +324,100 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_141">
+                    <section class="normal" id="section-gitbook_140">
                     
-                        <h1 id="-">データ</h1>
-<p>データはViewModelの作成時のオプションにdataとして渡すことが出来て、ViewModelのインスタンスからは<code>vm.$data</code>として参照することが出来ます。</p>
-<p>また、<code>vm.$data</code>の値はvmにプロキシされていて、例えば<code>vm.$data.name</code>は<code>vm.name</code>として参照することも出来ます。</p>
+                        <h1 id="computed">Computed</h1>
+<p>ComputedはfisrtNameとlastNameを組み合わせてfullNameというプロパティを作りたい場合など、シンプルなGetter、Setterとして使うと便利な機能です。</p>
+<p>Computed Propertyの値の中で使用している変数が更新されると自動的にComputed Propertyの値も更新されます。</p>
+<p>下記の様にプロパティの値として関数を定義すると、それはGetterとして扱われます。</p>
 <pre><code class="lang-javascript">vm = <span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">"#test"</span>,
   data: {
-    name: <span class="hljs-string">"bob"</span>
+    scores: [<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>]
+  },
+  computed: {
+    totalScore: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.scores.reduce(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(total, score)</span> {</span>
+        <span class="hljs-keyword">return</span> total + score;
+      });
+    },
   }
 });
 
-console.log(vm.$data.name); <span class="hljs-comment">// bob</span>
-console.log(vm.name);       <span class="hljs-comment">// bob</span>
-
-vm.name = <span class="hljs-string">"jim"</span>;
-
-console.log(vm.$data.name); <span class="hljs-comment">// jim</span>
-console.log(vm.name);       <span class="hljs-comment">// jim</span>
+console.log(vm.totalScore); <span class="hljs-comment">// 60</span>
 </code></pre>
-<p>dataの値はJSONとして表現できる形式である必要があります。</p>
-<p>dataの値は他のViewModelと共有して使用することも可能ですので、APIのレスポンスをdataとして、複数のViewModelで共有するといった使い方も出来ます。</p>
+<p>Getter、Setterを定義したい場合はこのように、$getと$setを定義します。</p>
+<pre><code class="lang-javascript">vm = <span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">"#test"</span>,
+  data: {
+    scores: [<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>]
+  },
+  computed: {
+    totalScore: {
+      $get: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.scores.reduce(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(total, score)</span> {</span>
+          <span class="hljs-keyword">return</span> total + score;
+        });
+      },
+      $set: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value)</span> {</span>
+        <span class="hljs-keyword">this</span>.scores.push(value)
+      }
+    },
+  }
+});
+
+console.log(vm.totalScore); <span class="hljs-comment">// 60</span>
+vm.totalScore = <span class="hljs-number">20</span>;
+console.log(vm.totalScore); <span class="hljs-comment">// 80</span>
+</code></pre>
+<h2 id="-">注意点</h2>
+<p>Computed Propertyがどの変数に依存しているかはGetterでの参照時に収集されるので、例えば分岐で依存しているにも関わらず参照されない変数があると、その変数については変更を検知することが出来ません。</p>
+<pre><code class="lang-javascript">vm = <span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">"#test"</span>,
+  data: {
+    okMsg: <span class="hljs-string">"ok"</span>,
+    errMsg: <span class="hljs-string">"error"</span>,
+    validated: <span class="hljs-literal">true</span>,
+  },
+  <span class="hljs-comment">// this.errMsgは参照されないので値が追跡されない</span>
+  computed: {
+    status: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.validated
+        ? <span class="hljs-keyword">this</span>.okMsg
+        : <span class="hljs-keyword">this</span>.errMsg
+    }
+  },
+  methods: {
+    toggle: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      <span class="hljs-keyword">this</span>.validated = !<span class="hljs-keyword">this</span>.validated;
+    }
+  }
+});
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- toggleさせてerrMsgが出すようにし、errMsgの値を変更しても{{status}}に反映されない
+&lt;div id="test"&gt;
+    &lt;input v-model="okMsg"&gt;
+    &lt;input v-model="errMsg"&gt;
+    &lt;button v-on="click: toggle"&gt;toggle&lt;/button&gt;
+    &lt;p&gt;{{status}}&lt;/p&gt;
+&lt;/div&gt;</span>
+</code></pre>
+<p><a href="http://jsfiddle.net/N3JQk/" target="_blank">http://jsfiddle.net/N3JQk/</a></p>
+<p>なのでそういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。</p>
+<pre><code class="lang-javascript">  <span class="hljs-comment">// this.errMsgは参照されないので値が追跡されない</span>
+  computed: {
+    status: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+      <span class="hljs-keyword">this</span>.okMsg;
+      <span class="hljs-keyword">this</span>.errMsg;
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.validated
+        ? <span class="hljs-keyword">this</span>.okMsg
+        : <span class="hljs-keyword">this</span>.errMsg
+    }
+  },
+</code></pre>
+<ul>
+<li>template内での{{}}についてはVue.jsのparserがうまくやってくれるので心配する必要はありません。</li>
+</ul>
 
                     
                     </section>
@@ -354,10 +427,10 @@ console.log(vm.name);       <span class="hljs-comment">// jim</span>
         </div>
 
         
-        <a href="../../src/view-model.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        <a href="../../src/view-model/methods.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../src/view-model/methods.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        <a href="../../src/directive.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
