@@ -24,7 +24,7 @@ vm = new Vue({
 console.log(vm.totalScore); // 60
 ```
 
-Getter、Setterを定義したい場合はこのように、$getと$setを定義します。
+Getter、Setterを定義したい場合はこのように、\$getと\$setを定義します。
 
 ```javascript
 vm = new Vue({
@@ -79,7 +79,7 @@ vm = new Vue({
 });
 ```
 ```html
-<!-- toggleさせてerrMsgが出すようにし、errMsgの値を変更しても{{status}}に反映されない
+<!-- toggleさせてerrMsgが出すようにし、errMsgの値を変更しても{{status}}に反映されない -->
 <div id="test">
     <input v-model="okMsg">
     <input v-model="errMsg">
