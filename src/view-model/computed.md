@@ -88,7 +88,10 @@ vm = new Vue({
 </div>
 ```
 
-http://jsfiddle.net/N3JQk/
+* http://jsfiddle.net/N3JQk/
+
+  * inputのokのメッセージを編集するとリアルタイムでstatusにも反映されますが、toggleしてerrorのinputのメッセージを編集してもリアルタイムで反映されないことがわかると思います。
+
 
 なのでそういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。
 ```javascript
