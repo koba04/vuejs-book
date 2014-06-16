@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="koba04/vuejs-book" data-level="4.3" data-basepath="../.." data-revision="1399911311259">
+    <div class="book" data-github="koba04/vuejs-book" data-level="4.3" data-basepath="../.." data-revision="1402936383854">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -324,7 +324,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_164">
+                    <section class="normal" id="section-gitbook_5">
                     
                         <h1 id="computed">Computed</h1>
 <p>ComputedはfisrtNameとlastNameを組み合わせてfullNameというプロパティを作りたい場合など、シンプルなGetter、Setterとして使うと便利な機能です。</p>
@@ -402,7 +402,13 @@ console.log(vm.totalScore); <span class="hljs-comment">// 80</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{status}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
-<p><a href="http://jsfiddle.net/N3JQk/" target="_blank">http://jsfiddle.net/N3JQk/</a></p>
+<ul>
+<li><p><a href="http://jsfiddle.net/N3JQk/" target="_blank">http://jsfiddle.net/N3JQk/</a></p>
+<ul>
+<li>inputのokのメッセージを編集するとリアルタイムでstatusにも反映されますが、toggleしてerrorのinputのメッセージを編集してもリアルタイムで反映されないことがわかると思います。</li>
+</ul>
+</li>
+</ul>
 <p>なのでそういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。</p>
 <pre><code class="lang-javascript">  <span class="hljs-comment">// this.errMsgは参照されないので値が追跡されない</span>
   computed: {
