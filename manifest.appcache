@@ -1,12 +1,15 @@
 CACHE MANIFEST
-# Revision 1403626321682
+# Revision 1403626384878
 
 CACHE:
 index.html
 src/README.html
 src/about-vuejs.html
 src/install.html
-src/view-model/instantiation-options.html
+src/view-model/computed.html
+src/view-model/data.html
+src/view-model/methods.html
+src/view-model/paramAttributes.html
 src/view-model.html
 gitbook/app.js
 gitbook/fonts/anonymouspro/400.woff
