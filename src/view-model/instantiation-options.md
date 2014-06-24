@@ -1,3 +1,0 @@
-# Instantiation Options
-
-ここではViewModelのインスタンス化する際に指定可能なオプションについて説明します。
