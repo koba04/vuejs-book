@@ -1,8 +1,8 @@
-# Computed
+# computed
 
-ComputedはfisrtNameとlastNameを組み合わせてfullNameというプロパティを作りたい場合など、シンプルなGetter、Setterとして使うと便利な機能です。
+computedはfisrtNameとlastNameを組み合わせてfullNameというプロパティを作りたい場合など、シンプルなGetter、Setterとして使うと便利な機能です。
 
-Computed Propertyの値の中で使用している変数が更新されると自動的にComputed Propertyの値も更新されます。
+computed propertyの値の中で使用している変数が更新されると自動的にcomputed propertyの値も更新されます。
 
 下記の様にプロパティの値として関数を定義すると、それはGetterとして扱われます。
 
@@ -24,7 +24,7 @@ vm = new Vue({
 console.log(vm.totalScore); // 60
 ```
 
-Getter、Setterを定義したい場合はこのように、\$getと\$setを定義します。
+Getter、Setterを定義したい場合はこのように、`\$get`と`\$set`を定義します。
 
 ```javascript
 vm = new Vue({
@@ -53,7 +53,7 @@ console.log(vm.totalScore); // 80
 
 ## 注意点
 
-Computed Propertyがどの変数に依存しているかはGetterでの参照時に収集されるので、例えば分岐で依存しているにも関わらず参照されない変数があると、その変数については変更を検知することが出来ません。
+computed propertyがどの変数に依存しているかはGetterでの参照時に収集されるので、例えば分岐で依存しているにも関わらず参照されない変数があると、その変数については変更を検知することが出来ません。
 
 ```javascript
 vm = new Vue({
@@ -93,7 +93,7 @@ vm = new Vue({
   * inputのokのメッセージを編集するとリアルタイムでstatusにも反映されますが、toggleしてerrorのinputのメッセージを編集してもリアルタイムで反映されないことがわかると思います。
 
 
-なのでそういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。
+そういった場合は、this.xxx;などど書くことで強制的に値を参照させる必要があります。
 ```javascript
   // this.errMsgは参照されないので値が追跡されない
   computed: {

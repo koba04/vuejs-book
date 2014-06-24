@@ -2,7 +2,7 @@
 
 ViewModelの初期値として設定したいDOMの属性名を配列で指定します。
 
-HTMLの属性としてViewModelにセットしたい値を指定し、ViewModelの側では`paramAttribute`として指定することでdataの初期値として設定されます。
+HTMLの属性としてViewModelにセットしたい値を指定し、ViewModelの側では`paramAttribute`として指定することで`data`の初期値として設定されます。
 
 ```html
 <div id="test" size="100" message="hello!"></div>
@@ -38,5 +38,5 @@ new Vue({
 
 ## 想定される用途
 
-サーバーサイドでtemplateを描画するようなアプリケーションにおいて、ViewModelの初期値を渡したいときにparamAttributesを用いて設定するといった使用方法が考えられます。
+サーバーサイドでtemplateを描画するようなアプリケーションにおいて、ViewModelの初期値を渡したいときに`paramAttributes`を用いて設定するといった使用方法が考えられます。
 

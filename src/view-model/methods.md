@@ -1,8 +1,8 @@
-# Methods
+# methods
 
 ViewModelのメソッドを定義するところです。
 
-ViewModelのdataにはJSONでシリアライズ可能なデータが格納されるため、メソッドはこちらに定義します。
+ViewModelの`data`にはJSONでシリアライズ可能なデータが格納されるため、メソッドはこちらに定義します。
 
 ここで定義したメソッドはtemplateの中からも呼ぶことが出来て、コンテキストはViewModelのインスタンスになります。
 
