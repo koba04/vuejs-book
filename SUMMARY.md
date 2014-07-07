@@ -9,6 +9,7 @@
     * [paramAttributes](src/view-model/instantiation-options/paramAttributes.md)
     * [el](src/view-model/instantiation-options/el.md)
     * [template](src/view-model/instantiation-options/template.md)
+    * [replace](src/view-model/instantiation-options/replace.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)

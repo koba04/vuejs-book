@@ -2,7 +2,8 @@
 
 `vm.$el`に挿入されるtemplateを文字列で指定します。`vm.$el`の中に存在していた要素は全てここで指定したtemplate文字列によって置き換えられます。
 
-**replace**のoptionが`true`に指定されている場合は、`$el`の中に挿入されるのではなく`$el`を完全に上書きします。
+**replace**のoptionが`true`に指定されている場合は、`el`の中に挿入されるのではなく`el`を上書きします。
+(詳しくは**replace**を参照してください)
 
 `#`ではじまる文字列をtemplateに指定した場合は`querySelector`として評価され、取得した要素の`innnerHTML`が使用されます。
 
