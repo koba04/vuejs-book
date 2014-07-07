@@ -8,6 +8,7 @@
     * [computed](src/view-model/instantiation-options/computed.md)
     * [paramAttributes](src/view-model/instantiation-options/paramAttributes.md)
     * [el](src/view-model/instantiation-options/el.md)
+    * [template](src/view-model/instantiation-options/template.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)
