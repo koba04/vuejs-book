@@ -24,7 +24,7 @@ vm = new Vue({
 console.log(vm.totalScore); // 60
 ```
 
-Getter、Setterを定義したい場合はこのように、`\$get`と`\$set`を定義します。
+Getter、Setterを定義したい場合はこのように、`$get`と`$set`を定義します。
 
 ```javascript
 vm = new Vue({
@@ -53,7 +53,7 @@ console.log(vm.totalScore); // 80
 
 ## 注意点
 
-computed propertyがどの変数に依存しているかはGetterでの参照時に収集されるので、例えば分岐で依存しているにも関わらず参照されない変数があると、その変数については変更を検知することが出来ません。
+computed propertyがどの変数に依存しているかはGetterでの参照時に収集されるので、例えば依存しているにも関わらず分岐によって参照されない変数があると、その変数については変更を検知することが出来ません。
 
 ```javascript
 vm = new Vue({
