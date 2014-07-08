@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>data | vue.js book</title>
+        <title>tagName | vue.js book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.6">
@@ -19,10 +19,10 @@
     <meta name="author" content="koba04">
     
     
-    <link rel="next" href="../../../src/view-model/instantiation-options/methods.html" />
+    <link rel="next" href="../../../src/directive.html" />
     
     
-    <link rel="prev" href="../../../src/view-model/instantiation-options.html" />
+    <link rel="prev" href="../../../src/view-model/instantiation-options/replace.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="koba04/vuejs-book" data-level="4.1.1" data-basepath="../../.." data-revision="1404796905219">
+    <div class="book" data-github="koba04/vuejs-book" data-level="4.1.8" data-basepath="../../.." data-revision="1404796905219">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/koba04/vuejs-book/edit/master/src/view-model/instantiation-options/data.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/koba04/vuejs-book/edit/master/src/view-model/instantiation-options/tagName.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -506,7 +506,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 28.571428571428573%;min-width: 23.80952380952381%;"></div>
+        <div class="inner" style="width: 61.904761904761905%;min-width: 57.142857142857146%;"></div>
     </div>
     <div class="chapters">
     
@@ -524,19 +524,19 @@
     
         <a href="../../../src/view-model/instantiation-options/data.html" title="data" class="chapter done " data-progress="4.1.1" style="left: 28.571428571428573%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/methods.html" title="methods" class="chapter  " data-progress="4.1.2" style="left: 33.333333333333336%;"></a>
+        <a href="../../../src/view-model/instantiation-options/methods.html" title="methods" class="chapter done " data-progress="4.1.2" style="left: 33.333333333333336%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/computed.html" title="computed" class="chapter  " data-progress="4.1.3" style="left: 38.095238095238095%;"></a>
+        <a href="../../../src/view-model/instantiation-options/computed.html" title="computed" class="chapter done " data-progress="4.1.3" style="left: 38.095238095238095%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/paramAttributes.html" title="paramAttributes" class="chapter  " data-progress="4.1.4" style="left: 42.857142857142854%;"></a>
+        <a href="../../../src/view-model/instantiation-options/paramAttributes.html" title="paramAttributes" class="chapter done " data-progress="4.1.4" style="left: 42.857142857142854%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/el.html" title="el" class="chapter  " data-progress="4.1.5" style="left: 47.61904761904762%;"></a>
+        <a href="../../../src/view-model/instantiation-options/el.html" title="el" class="chapter done " data-progress="4.1.5" style="left: 47.61904761904762%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/template.html" title="template" class="chapter  " data-progress="4.1.6" style="left: 52.38095238095238%;"></a>
+        <a href="../../../src/view-model/instantiation-options/template.html" title="template" class="chapter done " data-progress="4.1.6" style="left: 52.38095238095238%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/replace.html" title="replace" class="chapter  " data-progress="4.1.7" style="left: 57.142857142857146%;"></a>
+        <a href="../../../src/view-model/instantiation-options/replace.html" title="replace" class="chapter done " data-progress="4.1.7" style="left: 57.142857142857146%;"></a>
     
-        <a href="../../../src/view-model/instantiation-options/tagName.html" title="tagName" class="chapter  " data-progress="4.1.8" style="left: 61.904761904761905%;"></a>
+        <a href="../../../src/view-model/instantiation-options/tagName.html" title="tagName" class="chapter done " data-progress="4.1.8" style="left: 61.904761904761905%;"></a>
     
         <a href="../../../src/directive.html" title="Directive" class="chapter  new-chapter" data-progress="5" style="left: 66.66666666666667%;"></a>
     
@@ -559,27 +559,21 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_86">
+                    <section class="normal" id="section-gitbook_91">
                     
-                        <h1 id="data">data</h1>
-<p><code>data</code>はViewModelが保持するデータで、ViewModelの作成時にオプションとして渡すことが出来ます。ViewModelのインスタンスからは<code>vm.$data</code>として参照することが出来ます。</p>
-<p>また、<code>vm.$data</code>の値はvmにプロキシされていて、例えば<code>vm.$data.name</code>は<code>vm.name</code>として参照することも出来ます。</p>
-<pre><code class="lang-javascript">vm = <span class="hljs-keyword">new</span> Vue({
-  data: {
-    name: <span class="hljs-string">"bob"</span>
-  }
+                        <h1 id="tagname">tagName</h1>
+<p><code>el</code>が指定されていなくて<code>replace</code>がfalseの場合に、<code>$el</code>として新しく作成されるDOM要素のtag名です。</p>
+<p>デフォルトでは<code>div</code>が指定されています。</p>
+<pre><code class="lang-js">vm = <span class="hljs-keyword">new</span> Vue({
+    tagName: <span class="hljs-string">"ul"</span>,
+    template: <span class="hljs-string">"&lt;li&gt;xxxx&lt;/li&gt;"</span>
 });
 
-console.log(vm.$data.name); <span class="hljs-comment">// bob</span>
-console.log(vm.name);       <span class="hljs-comment">// bob</span>
+document.body.appendChild(vm.$el);
 
-vm.name = <span class="hljs-string">"jim"</span>;
-
-console.log(vm.$data.name); <span class="hljs-comment">// jim</span>
-console.log(vm.name);       <span class="hljs-comment">// jim</span>
+console.log(document.body.innerHTML);
+<span class="hljs-comment">// &lt;ul&gt;&lt;li&gt;xxxx&lt;/li&gt;&lt;/ul&gt;</span>
 </code></pre>
-<p>dataの値はJSONとして表現できる形式である必要があります。</p>
-<p>dataの値は他のViewModelと共有して使用することも可能ですので、APIのレスポンスをdataとして、複数のViewModelで共有するといった使い方も出来ます。</p>
 
                     
                     </section>
@@ -589,10 +583,10 @@ console.log(vm.name);       <span class="hljs-comment">// jim</span>
         </div>
 
         
-        <a href="../../../src/view-model/instantiation-options.html" class="navigation navigation-prev " aria-label="Previous page: Instantiation Options"><i class="fa fa-angle-left"></i></a>
+        <a href="../../../src/view-model/instantiation-options/replace.html" class="navigation navigation-prev " aria-label="Previous page: replace"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../../src/view-model/instantiation-options/methods.html" class="navigation navigation-next " aria-label="Next page: methods"><i class="fa fa-angle-right"></i></a>
+        <a href="../../../src/directive.html" class="navigation navigation-next " aria-label="Next page: Directive"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
