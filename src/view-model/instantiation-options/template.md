@@ -5,7 +5,7 @@
 **replace**のoptionが`true`に指定されている場合は、`el`の中に挿入されるのではなく`el`を上書きします。
 (詳しくは**replace**を参照してください)
 
-`#`ではじまる文字列をtemplateに指定した場合は`querySelector`として評価され、取得した要素の`innnerHTML`が使用されます。
+`#`ではじまる文字列をtemplateに指定した場合は`querySelector`として評価され、取得した要素の`innerHTML`が使用されます。
 
 これは`<script type="x-template">`によってtemplateの指定したい場合に便利です。
 
