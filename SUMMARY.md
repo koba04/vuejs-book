@@ -15,6 +15,7 @@
     * [className](src/view-model/instantiation-options/className.md)
     * [attributes](src/view-model/instantiation-options/attributes.md)
     * [Lifecycle Hooks](src/view-model/instantiation-options/LifecycleHooks.md)
+      * [created](src/view-model/instantiation-options/LifecycleHooks/created.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)

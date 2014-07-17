@@ -4,7 +4,9 @@ ViewModelのライフサイクルに応じて、`created`、`ready`、`attached`
 
 イベントは`hook:attached`のように`hook:eventName`という形式で発行されます。
 
-また、その際の`this`のコンテキストはViewModelのインスタンスになります。
+また、ViewModelをインスタンスする際に`created`、`ready`、`attached`、`detached`、`beforeDestroy`、`afterDestroy`にメソッドを指定することも出来ます。
+
+その際の`this`のコンテキストはViewModelのインスタンスになります。
 
 
 ```js
