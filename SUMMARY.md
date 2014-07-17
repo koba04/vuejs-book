@@ -16,6 +16,7 @@
     * [attributes](src/view-model/instantiation-options/attributes.md)
     * [Lifecycle Hooks](src/view-model/instantiation-options/LifecycleHooks.md)
       * [created](src/view-model/instantiation-options/LifecycleHooks/created.md)
+      * [ready](src/view-model/instantiation-options/LifecycleHooks/ready.md)
 * [Directive](src/directive.md)
 * [Filter](src/filter.md)
 * [Event](src/event.md)

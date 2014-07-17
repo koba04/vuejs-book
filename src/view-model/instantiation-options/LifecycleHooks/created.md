@@ -25,6 +25,8 @@ vm = new Vue({
     this.sum = function (a, b) { return a + b; };
     this.age = 10;
     this.$watch('name', function(newName) {
+      // changed name 1st
+      // changed name 3rd
       console.log("changed name " + newName)
     });
   }
@@ -36,7 +38,6 @@ Vue.nextTick(function() {
 
 console.log(vm.$data.age); // 10
 console.log(vm.$data.sum); // undefined
-// changed name 1st
-// changed name 3rd
+
 // <div id="main">1st</div>
 ```
