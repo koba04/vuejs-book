@@ -15,8 +15,12 @@ vm = new Vue({
     name: "hook"
   },
   created: function() {
-    this.$on("hook:created", function() { console.log("created event by " + this.name) });
-    this.$on("hook:ready", function() { console.log("ready event by " + this.name) });
+    this.$on("hook:created", function() {
+      console.log("created event by " + this.name)
+    });
+    this.$on("hook:ready", function() {
+      console.log("ready event by " + this.name)
+    });
   },
   ready: function() {
     console.log("ready function by " + this.name);
