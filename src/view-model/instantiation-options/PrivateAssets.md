@@ -1,6 +1,6 @@
 # Private Assets
 
-ViewModelをインスタンス化する際に指定することで、指定したViewModelと子のViewModelだけでのみ有効な`directives`や`filter`、`components`を作成することが出来ます。
+ViewModelをインスタンス化する際に指定することで、指定したViewModelと子のViewModelだけでのみ有効な`directives`や`filter`、`components`などを作成することが出来ます。
 
 作成出来るのは下記の通りです。
 
