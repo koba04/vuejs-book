@@ -1,6 +1,9 @@
-# vue.js book
+# vue.js book[WIP]
 
 This book is vue.js guide book.
+
+(work in progress)
+
 
 # writing
 
