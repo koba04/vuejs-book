@@ -1,3 +1,10 @@
+# DEPRECATED
+
+Vue.js has already a great documentation that have been translated into Japanese.
+I recommend to read that!
+
+http://jp.vuejs.org/
+
 # vue.js book[WIP]
 
 This book is vue.js guide book.
