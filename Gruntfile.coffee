@@ -19,8 +19,7 @@ module.exports = (grunt) ->
       files: '.grunt'
 
   grunt.registerTask 'publish', [
-#    'gitbook'
+    'gitbook'
     'gh-pages'
     'clean'
   ]
-

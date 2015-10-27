@@ -1,82 +1,90 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
-    
-    <head>
+<html lang="en-US" manifest="./manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Introduction | vue.js book[WIP]</title>
+        <title>Introduction | vue.js book</title>
+
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="koba04">
         <meta name="description" content="This book is vue.js guide book.">
-        <meta name="generator" content="GitBook 0.5.3">
-        <meta name="HandheldFriendly" content="true"/>
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="./src/README.html" />
+        
+        
+
+        <meta property="og:title" content="Introduction | vue.js book">
+        <meta property="og:site_name" content="vue.js book">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/koba04">
+        <meta property="book:tag" content="GitBook">
+
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-        
-    
-    
-    <meta name="author" content="koba04">
-    
-    
-    <link rel="next" href="./src/README.html" />
-    
-    
 
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
         
     </head>
     <body>
         
+
+        <link rel="stylesheet" href="gitbook/style.css">
         
-<link rel="stylesheet" href="gitbook/style.css">
 
 
         
-    <div class="book" data-github="koba04/vuejs-book" data-level="0" data-basepath="." data-revision="1409449639940">
+    <div class="book" data-github="koba04/vuejs-book" data-level="0" data-basepath="." data-revision="1445963769950">
     <div class="book-header">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
-    <a href="https://github.com/koba04/vuejs-book" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    <a href="https://github.com/koba04/vuejs-book" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
     
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
-        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
         </a>
         <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
 
-    <div class="btn-group btn-block">
-        <button id="reduce-font-size" class="btn btn-default">A</button>
-        <button id="enlarge-font-size" class="btn btn-default">A</button>
-    </div>
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
 
-    <ul class="list-group font-family-list">
-        <li class="list-group-item" data-font="0">Serif</li>
-        <li class="list-group-item" data-font="1">Sans</li>
-    </ul>
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
 
-    <div class="btn-group btn-group-xs btn-block color-theme-list">
-        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
-        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
-        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
-    </div>
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
 </div>
 
     </span>
 
     <!-- Actions Right -->
     
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
     
     
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
     
     
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
     
 
     
@@ -87,36 +95,30 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="./" >vue.js book[WIP]</a>
+        <a href="./" >vue.js book</a>
     </h1>
 </div>
 
-    
-
-<div class="book-summary">
+    <div class="book-summary">
     <div class="book-search">
         <input type="text" placeholder="Search" class="form-control" />
     </div>
     <ul class="summary">
         
-        
-        
         <li>
-            <a href="https://github.com/koba04" target="blank" class="author-link">About the author</a>
+            <a href="https://github.com/koba04" target="blank">About the author</a>
         </li>
         
 
         
-        
         <li>
-            <a href="https://github.com/koba04/vuejs-book/issues" target="blank"class="issues-link">Questions and Issues</a>
+            <a href="https://github.com/koba04/vuejs-book/issues" target="blank">Questions and Issues</a>
         </li>
         
 
         
-        
         <li>
-            <a href="https://github.com/koba04/vuejs-book/edit/master/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/koba04/vuejs-book/edit/master/README.md" target="blank">Edit and Contribute</a>
         </li>
         
 
@@ -128,427 +130,131 @@
             <a href="./"><i class="fa fa-check"></i> Introduction</a>
         </li>
         
-    
+            <li  data-level="1" data-path="src/README.html">
+                
+                <a href="./src/README.html">
+                    <i class="fa fa-check"></i> <b>1.</b> Introduction
+                </a>
+                
+                
+            </li>
         
-        <li class="chapter " data-level="1" data-path="src/README.html">
-            
+            <li  data-level="2" data-path="src/about-vuejs.html">
                 
-                    <a href="./src/README.html">
-                        <i class="fa fa-check"></i> <b>1.</b> Introduction
-                    </a>
+                <a href="./src/about-vuejs.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Vue.jsとは
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="2" data-path="src/about-vuejs.html">
-            
+            <li  data-level="3" data-path="src/install.html">
                 
-                    <a href="./src/about-vuejs.html">
-                        <i class="fa fa-check"></i> <b>2.</b> Vue.jsとは
-                    </a>
+                <a href="./src/install.html">
+                    <i class="fa fa-check"></i> <b>3.</b> インストール
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="3" data-path="src/install.html">
-            
+            <li  data-level="4" data-path="src/view-model.html">
                 
-                    <a href="./src/install.html">
-                        <i class="fa fa-check"></i> <b>3.</b> インストール
-                    </a>
+                <a href="./src/view-model.html">
+                    <i class="fa fa-check"></i> <b>4.</b> ViewModel
+                </a>
                 
-            
-            
-        </li>
-    
+                
+                <ul class="articles">
+                    
+                        <li  data-level="4.1" data-path="src/view-model/instantiation-options.html">
+                            
+                            <a href="./src/view-model/instantiation-options.html">
+                                <i class="fa fa-check"></i> <b>4.1.</b> Instantiation Options
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
         
-        <li class="chapter " data-level="4" data-path="src/view-model.html">
-            
+            <li  data-level="5" data-path="src/directive.html">
                 
-                    <a href="./src/view-model.html">
-                        <i class="fa fa-check"></i> <b>4.</b> ViewModel
-                    </a>
+                <a href="./src/directive.html">
+                    <i class="fa fa-check"></i> <b>5.</b> Directive
+                </a>
                 
-            
-            
-            <ul class="articles">
                 
-    
+            </li>
         
-        <li class="chapter " data-level="4.1" data-path="src/view-model/instantiation-options.html">
-            
+            <li  data-level="6" data-path="src/filter.html">
                 
-                    <a href="./src/view-model/instantiation-options.html">
-                        <i class="fa fa-check"></i> <b>4.1.</b> Instantiation Options
-                    </a>
+                <a href="./src/filter.html">
+                    <i class="fa fa-check"></i> <b>6.</b> Filter
+                </a>
                 
-            
-            
-            <ul class="articles">
                 
-    
+            </li>
         
-        <li class="chapter " data-level="4.1.1" data-path="src/view-model/instantiation-options/data.html">
-            
+            <li  data-level="7" data-path="src/event.html">
                 
-                    <a href="./src/view-model/instantiation-options/data.html">
-                        <i class="fa fa-check"></i> <b>4.1.1.</b> data
-                    </a>
+                <a href="./src/event.html">
+                    <i class="fa fa-check"></i> <b>7.</b> Event
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.2" data-path="src/view-model/instantiation-options/methods.html">
-            
+            <li  data-level="8" data-path="src/animation.html">
                 
-                    <a href="./src/view-model/instantiation-options/methods.html">
-                        <i class="fa fa-check"></i> <b>4.1.2.</b> methods
-                    </a>
+                <a href="./src/animation.html">
+                    <i class="fa fa-check"></i> <b>8.</b> Animation
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.3" data-path="src/view-model/instantiation-options/computed.html">
-            
+            <li  data-level="9" data-path="src/component.html">
                 
-                    <a href="./src/view-model/instantiation-options/computed.html">
-                        <i class="fa fa-check"></i> <b>4.1.3.</b> computed
-                    </a>
+                <a href="./src/component.html">
+                    <i class="fa fa-check"></i> <b>9.</b> Component
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.4" data-path="src/view-model/instantiation-options/paramAttributes.html">
-            
+            <li  data-level="10" data-path="src/routing.html">
                 
-                    <a href="./src/view-model/instantiation-options/paramAttributes.html">
-                        <i class="fa fa-check"></i> <b>4.1.4.</b> paramAttributes
-                    </a>
+                <a href="./src/routing.html">
+                    <i class="fa fa-check"></i> <b>10.</b> Routing
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.5" data-path="src/view-model/instantiation-options/el.html">
-            
+            <li  data-level="11" data-path="src/plugin.html">
                 
-                    <a href="./src/view-model/instantiation-options/el.html">
-                        <i class="fa fa-check"></i> <b>4.1.5.</b> el
-                    </a>
+                <a href="./src/plugin.html">
+                    <i class="fa fa-check"></i> <b>11.</b> Plugin
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.6" data-path="src/view-model/instantiation-options/template.html">
-            
+            <li  data-level="12" data-path="src/sample.html">
                 
-                    <a href="./src/view-model/instantiation-options/template.html">
-                        <i class="fa fa-check"></i> <b>4.1.6.</b> template
-                    </a>
+                <a href="./src/sample.html">
+                    <i class="fa fa-check"></i> <b>12.</b> サンプルアプリ
+                </a>
                 
-            
-            
-        </li>
-    
+                
+            </li>
         
-        <li class="chapter " data-level="4.1.7" data-path="src/view-model/instantiation-options/replace.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/replace.html">
-                        <i class="fa fa-check"></i> <b>4.1.7.</b> replace
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.8" data-path="src/view-model/instantiation-options/tagName.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/tagName.html">
-                        <i class="fa fa-check"></i> <b>4.1.8.</b> tagName
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.9" data-path="src/view-model/instantiation-options/id.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/id.html">
-                        <i class="fa fa-check"></i> <b>4.1.9.</b> id
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.10" data-path="src/view-model/instantiation-options/className.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/className.html">
-                        <i class="fa fa-check"></i> <b>4.1.10.</b> className
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.11" data-path="src/view-model/instantiation-options/attributes.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/attributes.html">
-                        <i class="fa fa-check"></i> <b>4.1.11.</b> attributes
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12" data-path="src/view-model/instantiation-options/LifecycleHooks.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.</b> Lifecycle Hooks
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.1.12.1" data-path="src/view-model/instantiation-options/LifecycleHooks/created.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/created.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.1.</b> created
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12.2" data-path="src/view-model/instantiation-options/LifecycleHooks/ready.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/ready.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.2.</b> ready
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12.3" data-path="src/view-model/instantiation-options/LifecycleHooks/attached.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/attached.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.3.</b> attached
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12.4" data-path="src/view-model/instantiation-options/LifecycleHooks/detached.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/detached.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.4.</b> detached
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12.5" data-path="src/view-model/instantiation-options/LifecycleHooks/beforeDestroy.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/beforeDestroy.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.5.</b> beforeDestroy
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.12.6" data-path="src/view-model/instantiation-options/LifecycleHooks/afterDestroy.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/LifecycleHooks/afterDestroy.html">
-                        <i class="fa fa-check"></i> <b>4.1.12.6.</b> afterDestroy
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.13" data-path="src/view-model/instantiation-options/PrivateAssets.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/PrivateAssets.html">
-                        <i class="fa fa-check"></i> <b>4.1.13.</b> PrivateAssets
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.14" data-path="src/view-model/instantiation-options/parent.html">
-            
-                
-                    <a href="./src/view-model/instantiation-options/parent.html">
-                        <i class="fa fa-check"></i> <b>4.1.14.</b> parent
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="5" data-path="src/directive.html">
-            
-                
-                    <a href="./src/directive.html">
-                        <i class="fa fa-check"></i> <b>5.</b> Directive
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="6" data-path="src/filter.html">
-            
-                
-                    <a href="./src/filter.html">
-                        <i class="fa fa-check"></i> <b>6.</b> Filter
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="7" data-path="src/event.html">
-            
-                
-                    <a href="./src/event.html">
-                        <i class="fa fa-check"></i> <b>7.</b> Event
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="8" data-path="src/animation.html">
-            
-                
-                    <a href="./src/animation.html">
-                        <i class="fa fa-check"></i> <b>8.</b> Animation
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="9" data-path="src/component.html">
-            
-                
-                    <a href="./src/component.html">
-                        <i class="fa fa-check"></i> <b>9.</b> Component
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="10" data-path="src/routing.html">
-            
-                
-                    <a href="./src/routing.html">
-                        <i class="fa fa-check"></i> <b>10.</b> Routing
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="11" data-path="src/plugin.html">
-            
-                
-                    <a href="./src/plugin.html">
-                        <i class="fa fa-check"></i> <b>11.</b> Plugin
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="12" data-path="src/sample.html">
-            
-                
-                    <a href="./src/sample.html">
-                        <i class="fa fa-check"></i> <b>12.</b> サンプルアプリ
-                    </a>
-                
-            
-            
-        </li>
-    
-
 
         
         <li class="divider"></li>
         <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
         </li>
         
     </ul>
@@ -565,80 +271,44 @@
     
         <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./src/README.html" title="Introduction" class="chapter  new-chapter" data-progress="1" style="left: 3.0303030303030303%;"></a>
+        <a href="./src/README.html" title="Introduction" class="chapter  new-chapter" data-progress="1" style="left: 7.6923076923076925%;"></a>
     
-        <a href="./src/about-vuejs.html" title="Vue.jsとは" class="chapter  new-chapter" data-progress="2" style="left: 6.0606060606060606%;"></a>
+        <a href="./src/routing.html" title="Routing" class="chapter  " data-progress="10" style="left: 15.384615384615385%;"></a>
     
-        <a href="./src/install.html" title="インストール" class="chapter  new-chapter" data-progress="3" style="left: 9.090909090909092%;"></a>
+        <a href="./src/plugin.html" title="Plugin" class="chapter  " data-progress="11" style="left: 23.076923076923077%;"></a>
     
-        <a href="./src/view-model.html" title="ViewModel" class="chapter  new-chapter" data-progress="4" style="left: 12.121212121212121%;"></a>
+        <a href="./src/sample.html" title="サンプルアプリ" class="chapter  " data-progress="12" style="left: 30.76923076923077%;"></a>
     
-        <a href="./src/view-model/instantiation-options.html" title="Instantiation Options" class="chapter  " data-progress="4.1" style="left: 15.151515151515152%;"></a>
+        <a href="./src/about-vuejs.html" title="Vue.jsとは" class="chapter  new-chapter" data-progress="2" style="left: 38.46153846153846%;"></a>
     
-        <a href="./src/view-model/instantiation-options/data.html" title="data" class="chapter  " data-progress="4.1.1" style="left: 18.181818181818183%;"></a>
+        <a href="./src/install.html" title="インストール" class="chapter  new-chapter" data-progress="3" style="left: 46.15384615384615%;"></a>
     
-        <a href="./src/view-model/instantiation-options/methods.html" title="methods" class="chapter  " data-progress="4.1.2" style="left: 21.21212121212121%;"></a>
+        <a href="./src/view-model.html" title="ViewModel" class="chapter  new-chapter" data-progress="4" style="left: 53.84615384615385%;"></a>
     
-        <a href="./src/view-model/instantiation-options/computed.html" title="computed" class="chapter  " data-progress="4.1.3" style="left: 24.242424242424242%;"></a>
+        <a href="./src/view-model/instantiation-options.html" title="Instantiation Options" class="chapter  " data-progress="4.1" style="left: 61.53846153846154%;"></a>
     
-        <a href="./src/view-model/instantiation-options/paramAttributes.html" title="paramAttributes" class="chapter  " data-progress="4.1.4" style="left: 27.272727272727273%;"></a>
+        <a href="./src/directive.html" title="Directive" class="chapter  new-chapter" data-progress="5" style="left: 69.23076923076923%;"></a>
     
-        <a href="./src/view-model/instantiation-options/el.html" title="el" class="chapter  " data-progress="4.1.5" style="left: 30.303030303030305%;"></a>
+        <a href="./src/filter.html" title="Filter" class="chapter  new-chapter" data-progress="6" style="left: 76.92307692307692%;"></a>
     
-        <a href="./src/view-model/instantiation-options/template.html" title="template" class="chapter  " data-progress="4.1.6" style="left: 33.333333333333336%;"></a>
+        <a href="./src/event.html" title="Event" class="chapter  new-chapter" data-progress="7" style="left: 84.61538461538461%;"></a>
     
-        <a href="./src/view-model/instantiation-options/replace.html" title="replace" class="chapter  " data-progress="4.1.7" style="left: 36.36363636363637%;"></a>
+        <a href="./src/animation.html" title="Animation" class="chapter  new-chapter" data-progress="8" style="left: 92.3076923076923%;"></a>
     
-        <a href="./src/view-model/instantiation-options/tagName.html" title="tagName" class="chapter  " data-progress="4.1.8" style="left: 39.39393939393939%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/id.html" title="id" class="chapter  " data-progress="4.1.9" style="left: 42.42424242424242%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/className.html" title="className" class="chapter  " data-progress="4.1.10" style="left: 45.45454545454545%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/attributes.html" title="attributes" class="chapter  " data-progress="4.1.11" style="left: 48.484848484848484%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks.html" title="Lifecycle Hooks" class="chapter  " data-progress="4.1.12" style="left: 51.515151515151516%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/created.html" title="created" class="chapter  " data-progress="4.1.12.1" style="left: 54.54545454545455%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/ready.html" title="ready" class="chapter  " data-progress="4.1.12.2" style="left: 57.57575757575758%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/attached.html" title="attached" class="chapter  " data-progress="4.1.12.3" style="left: 60.60606060606061%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/detached.html" title="detached" class="chapter  " data-progress="4.1.12.4" style="left: 63.63636363636363%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/beforeDestroy.html" title="beforeDestroy" class="chapter  " data-progress="4.1.12.5" style="left: 66.66666666666667%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/LifecycleHooks/afterDestroy.html" title="afterDestroy" class="chapter  " data-progress="4.1.12.6" style="left: 69.6969696969697%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/PrivateAssets.html" title="PrivateAssets" class="chapter  " data-progress="4.1.13" style="left: 72.72727272727273%;"></a>
-    
-        <a href="./src/view-model/instantiation-options/parent.html" title="parent" class="chapter  " data-progress="4.1.14" style="left: 75.75757575757575%;"></a>
-    
-        <a href="./src/directive.html" title="Directive" class="chapter  new-chapter" data-progress="5" style="left: 78.78787878787878%;"></a>
-    
-        <a href="./src/filter.html" title="Filter" class="chapter  new-chapter" data-progress="6" style="left: 81.81818181818181%;"></a>
-    
-        <a href="./src/event.html" title="Event" class="chapter  new-chapter" data-progress="7" style="left: 84.84848484848484%;"></a>
-    
-        <a href="./src/animation.html" title="Animation" class="chapter  new-chapter" data-progress="8" style="left: 87.87878787878788%;"></a>
-    
-        <a href="./src/component.html" title="Component" class="chapter  new-chapter" data-progress="9" style="left: 90.9090909090909%;"></a>
-    
-        <a href="./src/routing.html" title="Routing" class="chapter  " data-progress="10" style="left: 93.93939393939394%;"></a>
-    
-        <a href="./src/plugin.html" title="Plugin" class="chapter  " data-progress="11" style="left: 96.96969696969697%;"></a>
-    
-        <a href="./src/sample.html" title="サンプルアプリ" class="chapter  " data-progress="12" style="left: 100%;"></a>
+        <a href="./src/component.html" title="Component" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_53">
+                    <section class="normal" id="section-gitbook_1">
                     
-                        <h1 id="vue-js-book-wip-">vue.js book[WIP]</h1>
+                        <h1 id="deprecated">DEPRECATED</h1>
+<p>Vue.js has already a great documentation that have been translated into Japanese.</p>
+<p>I recommend to read that!</p>
+<p><a href="http://jp.vuejs.org/" target="_blank">http://jp.vuejs.org/</a></p>
+<h1 id="vue-js-book-wip-">vue.js book[WIP]</h1>
 <p>This book is vue.js guide book.</p>
 <p>(work in progress)</p>
 <h1 id="writing">writing</h1>
@@ -664,14 +334,22 @@ Serving book on http://localhost:4000
 
         
         
-        <a href="./src/README.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Introduction"><i class="fa fa-angle-right"></i></a>
+        <a href="./src/README.html" class="navigation navigation-next navigation-unique"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script src="gitbook/app.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="gitbook/app.js"></script>
+        
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
 
     
     <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -681,10 +359,6 @@ Serving book on http://localhost:4000
     <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
-    
-    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
-    
-
 <script>
 require(["gitbook"], function(gitbook) {
     var config = {};
@@ -692,7 +366,5 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        
     </body>
-    
 </html>
